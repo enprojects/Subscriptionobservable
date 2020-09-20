@@ -1,0 +1,15 @@
+<button (click)="do1()"> Click me obs 1</button>
+<button (click)="do2()"> Click me obs 2</button>
+
+<hr>
+<div *ngIf="(courses$| async)" >
+ {{ (courses$| async)}}
+
+</div>
+
+<hr>
+<div *ngIf="(someDataSource$| async )" >
+  {{(someDataSource$| async )}}
+  </div>
+
+
